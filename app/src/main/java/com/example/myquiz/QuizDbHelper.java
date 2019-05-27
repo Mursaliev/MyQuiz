@@ -87,20 +87,20 @@ public class QuizDbHelper extends SQLiteOpenHelper {
     }
 
     private void fillQuestionsTable(){
-        Question q1 = new Question("Programming, Easy: A is correct",
-                "A", "B", "C", 1,
+        Question q1 = new Question("Java : choose correct one",
+                "programming language", "hello world", "hello world", 1,
                 Question.DIFFICULTY_EASY, Category.PROGRAMMING);
         addQuestion(q1);
-        Question q2 = new Question("Geography, Medium: B is correct",
-                "A", "B", "C", 2,
+        Question q2 = new Question("Russia : choose correct one",
+                "hello world", "Country", "hello world", 2,
                 Question.DIFFICULTY_MEDIUM, Category.GEOGRAPHY);
         addQuestion(q2);
-        Question q3 = new Question("Math, Hard: C is correct",
-                "A", "B", "C", 3,
+        Question q3 = new Question("24 + 26: choose correct one",
+                "hello world", "hello world", "50", 3,
                 Question.DIFFICULTY_HARD, Category.MATH);
         addQuestion(q3);
-        Question q4 = new Question("Math, Easy: A is correct",
-                "A", "B", "C", 1,
+        Question q4 = new Question("2 + 2 : choose correct one",
+                "4", "hello world", "hello world", 1,
                 Question.DIFFICULTY_EASY, Category.MATH);
         addQuestion(q4);
         Question q5 = new Question("Non existing, Easy: A is correct",
